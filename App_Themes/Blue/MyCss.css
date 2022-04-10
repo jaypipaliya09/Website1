@@ -1,0 +1,164 @@
+﻿body {
+  font-family:Verdana;
+}
+
+
+.navbar1 {
+  list-style-type: none;
+  margin: 10px;
+  padding: 5px;
+  overflow: hidden;
+  background-color: #333;
+  outline-width:thick
+  
+}
+
+
+
+.navbar1 > li {
+  float: left;
+}
+
+.navbar1 > li {
+  display: block;
+  color: white;
+  text-align: right;
+  padding: 2px 5px;
+  text-decoration: none;
+}
+
+
+.navbar2 {
+  list-style-type: none;
+  margin: 5px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  
+}
+
+.navbar2 > li {
+  float: left;
+}
+
+.navbar2 > li {
+  display: block;
+  color: white;
+  text-align: right;
+  padding: 5px 5px;
+  text-decoration: none;
+}
+
+
+.footer{
+    background-color:black;
+    color:white;
+}
+
+.footer A{
+    color:green;
+    text-decoration:none;
+}
+
+A{
+    color:white
+}
+
+A:hover{
+    color:lightgreen;
+    text-decoration:none;
+}
+
+.footer A:hover{
+    color:white;
+}
+
+ h2{
+    background-color:black; 
+    color:white;
+    line-height:100px;
+    font-size:20px;
+    font-family:Georgia;
+    align-content:left;
+    padding-left:20px;   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);           
+}
+ p{
+    text-align:justify;
+    font-family:Verdana;
+    line-height:25px
+ }
+ 
+ h5{
+     font-family:Arial;
+     font-weight:bolder
+ }
+ 
+ h6{
+     font-family:'Arial Rounded MT';
+     font-weight:lighter
+ } 
+ 
+tr:nth-child(even){
+   background-color:#f2f2f2;
+}
+
+th, td{
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align:left;
+}
+
+tr:hover{
+    background-color:seagreen;
+}
+
+th{
+    background-color:#569956
+}
+
+.btn{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+}
+
+.btn:hover{
+    background-color:#8b7878;
+    border-radius:8px
+}
+
+dd{
+    text-align:justify;
+}
+
+.img-responsive{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+article > p{
+    text-align:left;
+}
+
+#message{
+    font-family:'Monotype Corsiva';
+    text-align:right;
+    font-weight:bolder
+}
+
+#sign{
+    text-align:right;
+    text-shadow: 2px  black;
+}
+
+li{
+    text-align:justify
+}
+
+h3{
+    text-align:justify;
+}
+
+
+.darshan > h3{
+    text-align:center;
+}

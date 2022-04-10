@@ -1,0 +1,38 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+
+<asp:Button runat="server" Cssclass="btn btn-success"/>
+<asp:Image runat="server"  ToolTip="Darshan Institute of Engineering and Technology" ImageUrl="~/Content/Images/DIET_Logo.svg"  SkinID="DIETLogo" height="60px"/>
+<asp:Image runat="server"  ToolTip="Darshan Institute of Engineering and Technology -- Image1" ImageUrl="~/Content/Images/Slide_1.jpg"  SkinID="Slider1"  CssClass="img-responsive"/>
+<asp:Image runat="server"  ToolTip="Student Activity Center" ImageUrl="~/Content/Images/SAC_12052017_010047PM.png"  SkinID="SAC" Cssclass="img-responsive"/>
+<asp:Image runat="server"  ToolTip="Library" ImageUrl="~/Content/Images/Library_Slide_1_27052019_050116AM.jpg"  SkinID="Library" Cssclass="img-responsive"/>
+<asp:Image runat="server"  ToolTip="Membership" ImageUrl="~/Content/Images/British_Council_10052017_061113AM.png"  SkinID="Member1" Cssclass="img-responsive"/>
+<asp:Image runat="server"  ToolTip="Membership" ImageUrl="~/Content/Images/delnet_10052017_061147AM.jpg"  SkinID="Member2" Cssclass="img-responsive"/>
+<asp:Image runat="server"  ToolTip="Bus Service" ImageUrl="~/Content/Images/Transportation_01_03112014_012037PM.jpg"  SkinID="Transportation" Cssclass="img-responsive"/>
+<asp:Image runat="server"  ToolTip="Vision" ImageUrl="~/Content/Images/5af9e1ba1c883_thumb900.jpg"  SkinID="vision" Cssclass="img-responsive"/>
+<asp:Image runat="server"  ToolTip="Mission" ImageUrl="~/Content/Images/mission-colored-rainbow-word-text-suitable-logo-design-card-brochure-typography-127992821.jpg"  SkinID="mission" Cssclass="img-responsive" height="316.96px" width="555px"/>
+<asp:Image runat="server"  ToolTip="Message" ImageUrl="~/Content/Images/RGD_10052017_035010AM.png"  SkinID="principal" Cssclass="img-responsive"/>
+<asp:Image runat="server"  ToolTip="Women Devlopment Cell" ImageUrl="~/Content/Images/Women-Development-Cell_06032019_075245AM.png"  SkinID="women" Cssclass="img-responsive"/>
+<asp:Image runat="server"  ToolTip="Anti Ragging Committee" ImageUrl="~/Content/Images/Anti-Ragging-Poster_06032019_073029AM.png"  SkinID="antiRagging" Cssclass="img-responsive"/>
+<asp:Image runat="server"  ToolTip="ASWDC" ImageUrl="~/Content/Images/ASWDC-logo.png"  SkinID="aswdc" Cssclass="img-responsive"/>
+<asp:Image runat="server"  ToolTip="CivilImage" ImageUrl="~/Content/Images/CI_1.png"  SkinID="img1" Cssclass="img-responsive"/>
+<asp:Image runat="server"  ToolTip="CivilImage" ImageUrl="~/Content/Images/CI_3.png"  SkinID="img2" Cssclass="img-responsive"/>
+<asp:Image runat="server"  ToolTip="CivilImage" ImageUrl="~/Content/Images/CI_5.png"  SkinID="img3" Cssclass="img-responsive"/>
+<asp:Image runat="server"  ToolTip="CivilImage" ImageUrl="~/Content/Images/CI_7.png"  SkinID="img4" Cssclass="img-responsive"/>
+<asp:Image runat="server"  ToolTip="CivilImage" ImageUrl="~/Content/Images/CI_2.png"  SkinID="img5" Cssclass="img-responsive"/>
+<asp:Image runat="server"  ToolTip="CivilImage" ImageUrl="~/Content/Images/CI_4.png"  SkinID="img6" Cssclass="img-responsive"/>
+<asp:Image runat="server"  ToolTip="CivilImage" ImageUrl="~/Content/Images/CI_6.png"  SkinID="img7" Cssclass="img-responsive"/>
+<asp:Image runat="server"  ToolTip="CivilImage" ImageUrl="~/Content/Images/CI_8.png"  SkinID="img8" Cssclass="img-responsive"/>

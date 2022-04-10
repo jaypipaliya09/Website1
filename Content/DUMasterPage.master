@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="DUMasterPage.master.cs" Inherits="Content_DUMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Darshan Institute Of Engineering and Technology</title>
+
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap-theme.min.css" rel="stylesheet" />
+    
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder id="cphHead" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="navbar1" style="position:fixed; margin-top:375px">
+         
+         <a href="#"  ToolTip="Back To Top">
+             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+            </svg>
+
+        </a>
+     </div>
+    <form id="form1" runat="server">
+         
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <br />
+                    <asp:Image runat="server" Id="imgDarshanLogo" ToolTip="Darshan Institute of Engineering and Technology"  AlternateText="DIET Image" SkinID="DIETLogo" />
+                </div>
+                <div class="col-md-9">
+                    <div class="row" align="right">
+                        <div class="col-md-12">
+                            <br />
+                            <ul class="navbar1" id="Home">
+                                <li><asp:HyperLink runat="server" ID="hlHome" Text="Home" ToolTip="Home - DIET" NavigateUrl="~/Content/DUWebsite/Index.aspx"></asp:HyperLink>&nbsp;&nbsp;|</li>
+                                <li><asp:HyperLink runat="server" ID="hlAboutUs" Text="About Institute" ToolTip="About Institute - DIET" NavigateUrl="~/Content/DUWebsite/AboutDU.aspx"></asp:HyperLink>&nbsp;&nbsp;|</li>
+                                <li><asp:HyperLink runat="server" ID="hlStudentActivityCenter" Text="Student Activity Center(SAC)" ToolTip="Student Activity Center(SAC) - DIET" NavigateUrl="~/Content/DUWebsite/SAS.aspx"></asp:HyperLink>&nbsp;&nbsp;|</li>
+                                <li><asp:HyperLink runat="server" ID="hlPrograms" Text="Programs" ToolTip="Programs - DIET" NavigateUrl="~/Content/DUWebsite/Program.aspx"></asp:HyperLink>&nbsp;&nbsp;|</li>
+                                <li><asp:HyperLink runat="server" ID="hlLibrary" Text="Library" ToolTip="Library - DIET" NavigateUrl="~/Content/DUWebsite/Library.aspx"></asp:HyperLink>&nbsp;&nbsp;|</li>
+                                <li><asp:HyperLink runat="server" ID="hlTransportation" Text="Transportation" ToolTip="Transportation - DIET" NavigateUrl="~/Content/DUWebsite/Transportation.aspx"></asp:HyperLink>&nbsp;&nbsp;|</li>
+                                <li><asp:HyperLink runat="server" ID="hlScStCell" Text="SC-ST Cell" ToolTip="SC-ST Cell - DIET" NavigateUrl="~/Content/DUWebsite/ScST.aspx"></asp:HyperLink></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row" align="right">
+                        <div class="col-md-12">
+                            <ul class="navbar2">
+                                <li><asp:DropDownList runat="server" ToolTip="Department" ID="ddlDepartment" OnSelectedIndexChanged="ddlDepartment_SelectedIndexChanged" AutoPostBack="true" style="color:white; background-color:#333;">
+                                </asp:DropDownList>&nbsp;&nbsp|</li>
+                                <li><asp:HyperLink runat="server" ID="hlVisionMission" Text="Vision & Mission" ToolTip="Vision & Mission - DIET" NavigateUrl="~/Content/DUWebsite/VisionMission.aspx"></asp:HyperLink>&nbsp;&nbsp;|</li>
+                                <li><asp:HyperLink runat="server" ID="hlMessage" Text="Chairman's Message" ToolTip="Chairman's Message - DIET" NavigateUrl="~/Content/DUWebsite/Message.aspx"></asp:HyperLink>&nbsp;&nbsp;|</li>
+                                <li><asp:HyperLink runat="server" ID="hlWomen" Text="Women's Devlopment Cell" ToolTip="Women's Devlopment Cell - DIET" NavigateUrl="~/Content/DUWebsite/WomenDevlopmentCell.aspx"></asp:HyperLink>&nbsp;&nbsp;|</li>
+                                <li><asp:HyperLink runat="server" ID="hlAntiRagging" Text="Anti Ragging Committee" ToolTip="Anti Ragging Committee - DIET" NavigateUrl="~/Content/DUWebsite/AntiRagging.aspx"></asp:HyperLink></li>
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row content">
+                <div class="col-md-12">
+                    <hr />
+                    <asp:ContentPlaceHolder id="CPHMainContent" runat="server">
+        
+                    </asp:ContentPlaceHolder>
+                    <hr />
+                </div>
+            </div>
+            <div class="row footer">
+                <br />
+                <div class="col-md-4">
+                    <h4><u>About us</u></h4>
+                    <hr />
+                    <p align="justify">Darshan Institute of Engineering & Technology is a leading institute offering undergraduate (B.E.), postgraduate (M.E.) and Diploma programs in engineering.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4><u>For Student/Parents</u></h4>
+                    <hr />
+                    <div class="hl">
+                        <asp:HyperLink runat="server" ID="hlAboutUs1" Text="About Institute" ToolTip="About Institute - DIET" NavigateUrl="~/Content/DUWebsite/AboutDU.aspx"></asp:HyperLink><br /><hr />
+                        <asp:HyperLink runat="server" ID="hlStudentActivityCenter1" Text="Student Activity Center(SAC)" ToolTip="Student Activity Center(SAC) - DIET"  NavigateUrl="~/Content/DUWebsite/SAS.aspx"></asp:HyperLink><br /><hr />
+                        <asp:HyperLink runat="server" ID="hlPrograms1" Text="Programs" ToolTip="Programs - DIET" NavigateUrl="~/Content/DUWebsite/Program.aspx"></asp:HyperLink><br /><hr />
+                        <asp:HyperLink runat="server" ID="hlLibrary1" Text="Library" ToolTip="Library - DIET" NavigateUrl="~/Content/DUWebsite/Library.aspx"></asp:HyperLink><br /><hr />
+                    </div>
+               </div>
+               <div class="col-md-4">
+                   <h4><u>Our Contacts</u></h4>
+                   <hr />
+                   <p>At Hadala, Rajkot - Morbi Highway,<br />Gujarat-363650, INDIA</p><br />
+                   <p>(+91) 97277 47310 <br />(+91) 97277 47311</p>
+
+               </div>
+            </div>
+        </div>
+
+    <div>
+       
+    </div>
+    </form>
+</body>
+</html>
